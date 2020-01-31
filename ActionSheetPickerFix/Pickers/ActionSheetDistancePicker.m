@@ -168,6 +168,9 @@
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
 
+    pickerView.subviews[1].backgroundColor = UIColor.whiteColor;
+    pickerView.subviews[2].backgroundColor = UIColor.whiteColor;
+    
     CGFloat totalWidth = pickerView.frame.size.width - 30;
     CGFloat otherSize = (totalWidth )/(self.bigUnitDigits + self.smallUnitDigits + 2);
 

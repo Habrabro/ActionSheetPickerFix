@@ -15,18 +15,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agp-ew-wV8">
-                                <rect key="frame" x="123.5" y="318.5" width="128" height="30"/>
-                                <state key="normal" title="Show ActionPicker"/>
-                                <connections>
-                                    <action selector="showActionPickerButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odC-VZ-U6m"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gP4-di-ylC">
+                                <rect key="frame" x="76.5" y="273.5" width="222" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agp-ew-wV8">
+                                        <rect key="frame" x="0.0" y="0.0" width="222" height="30"/>
+                                        <state key="normal" title="ActionSheetStringPicker"/>
+                                        <connections>
+                                            <action selector="actionSheetStringPickerButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdJ-eh-qge"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t49-gr-bHY">
+                                        <rect key="frame" x="0.0" y="30" width="222" height="30"/>
+                                        <state key="normal" title="ActionSheetMultipleStringPicker"/>
+                                        <connections>
+                                            <action selector="actionSheetMultipleStringPickerButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n36-hO-rDy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6v-qv-Tmy">
+                                        <rect key="frame" x="0.0" y="60" width="222" height="30"/>
+                                        <state key="normal" title="ActionSheetLocalePicker"/>
+                                        <connections>
+                                            <action selector="actionSheetLocalePickerButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1b-0k-RFb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukj-hA-6q4">
+                                        <rect key="frame" x="0.0" y="90" width="222" height="30"/>
+                                        <state key="normal" title="ActionSheetDistancePicker"/>
+                                        <connections>
+                                            <action selector="actionSheetDistancePickerButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3oo-Ee-qzv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Agp-ew-wV8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RIE-Xm-pJf"/>
-                            <constraint firstItem="Agp-ew-wV8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cWx-3s-FXz"/>
+                            <constraint firstItem="gP4-di-ylC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N1o-Hf-ss5"/>
+                            <constraint firstItem="gP4-di-ylC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eqi-lh-KwH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

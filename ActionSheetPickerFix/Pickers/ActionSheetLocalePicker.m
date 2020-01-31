@@ -293,6 +293,9 @@
            reusingView:(UIView *)view {
 
     UILabel *pickerLabel = (UILabel *)view;
+    
+    pickerView.subviews[1].backgroundColor = UIColor.whiteColor;
+    pickerView.subviews[2].backgroundColor = UIColor.whiteColor;
 
     if (pickerLabel == nil) {
         CGRect frame = CGRectZero;

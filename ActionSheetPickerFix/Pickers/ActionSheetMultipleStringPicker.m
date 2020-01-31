@@ -168,6 +168,10 @@
 }
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+    
+    pickerView.subviews[1].backgroundColor = UIColor.whiteColor;
+    pickerView.subviews[2].backgroundColor = UIColor.whiteColor;
+    
     UILabel *pickerLabel = (UILabel *)view;
     if (pickerLabel == nil) {
         pickerLabel = [[UILabel alloc] init];
