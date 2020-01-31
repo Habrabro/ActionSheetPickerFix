@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func showActionPickerButtonDidTapped(_ sender: Any) {
+        
+        let picker = ActionSheetStringPicker(
+            title: "Multiple String Picker",
+            rows: ["Many", "Many more", "Infinite"],
+            initialSelection: 2,
+            target: nil, successAction: nil, cancelAction: nil, origin: sender)
+        picker?.pickerBackgroundColor = .black
+        picker?.toolbarBackgroundColor = .black
+        picker?.setTextColor(.white)
+        picker?.show()
+    }
+    
 }
-
